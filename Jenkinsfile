@@ -19,6 +19,7 @@ pipeline {
                   steps {
                         echo "Deploying in Testing Server"
                         echo "Deploying in Testing2 Server"
+                        sh "cp $WORKSPACE/target/demo.war /home/ubuntu/Deployments"
                         
                   }
             }
